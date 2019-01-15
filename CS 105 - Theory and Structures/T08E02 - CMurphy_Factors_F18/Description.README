@@ -1,0 +1,27 @@
+The project name of this exercise is Factors
+
+The purpose of this assignment is to learn how to work with ArrayLists and iteration. Additionally, you get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+You are going to write a program that finds the prime factors (Links to an external site.)Links to an external site. of a number.
+
+
+
+The user creates a Factors object which passes the number they want factored in the constructor. The user can print out all of the factors present using a while loop. The UML above contains all of the instance variables and methods needed to implement the problem. You will probably need some local variables also to fully implement this.
+
+Your Main.java should contain code to test your Factors object.
+
+Hints
+The parameter passed to the constructor will always be integers greater than or equal to 2.
+Compute all of the factors in the constructor.
+Use factorIndex to remember where you are in the factor ArrayList.
+All loops must be while loops.
+Don't forget about integer division and modulo!
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called Factors.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called Factors.java as well as a file called Main.java. There is no code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation. Your Main.java should contain code to test your Factors object. Ask the user for input (using a scanner) and outputs the factors sequentially. If you input 150 then your output should look like this:
+
+2
+3
+5
+5
+Notice that the numbers are in ascending order. You will need to do that too. Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

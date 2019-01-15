@@ -1,0 +1,14 @@
+[
+  {
+    "painter": "Picasso",
+    "image": "painter00.jpg"
+  },
+  {
+    "painter": "Escher",
+    "image": "painter02.jpg"
+  },
+  {
+    "painter": "Matisse",
+    "image": "painter01.jpeg"
+  }
+]

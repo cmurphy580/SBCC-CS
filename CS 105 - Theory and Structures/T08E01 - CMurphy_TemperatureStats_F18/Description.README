@@ -1,0 +1,31 @@
+The project name of this exercise is TemperatureStats
+
+The purpose of this assignment is to learn how to work with multiple items. Dealing with repitition is where programming starts to become interesting. Additionally, you get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+You are writing a small object that computes various temperature stats. After the object has been created (instantiated) you can add any number of temperatures that you'd like to it. At any time you can ask for the minimum of the temperatures, the maximum of the temperatures, and an average (Links to an external site.)Links to an external site. of the temperatures.
+
+The object to implement this is referred to as TemperatureStats and consists of only the following public methods:
+
+public TemperatureStats()
+
+public void addTemperature(double t) - Add a temperature to the statistics. This can be called as much as we'd like.
+
+public void clearTemperatures() - Removes all temperatures.
+
+public double getMaximumTemperature() - Returns the maximum temperature for the inputs given.
+
+public double getMinimumTemperature() - Returns the minimum temperature for the inputs given.
+
+public double getAverageTemperature() - Returns the average (Links to an external site.)Links to an external site. temperature for the inputs given.
+
+Your Main.java should contain code to test your TemperatureStats object. Load multiple values and check to make sure that the values match the expected values.
+
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called TemperatureStats.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called TemperatureStats.java as well as a file called Main.java.
+
+There is no code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation.
+
+Your Main.java should contain code to test your TemperatureStats object. At the very least be sure to test for cases where you have no numbers or multiple numbers.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

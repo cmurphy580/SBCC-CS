@@ -1,0 +1,22 @@
+Program Description
+This program will read the same data that was used in the in-class assignment Earthquakes.
+
+The earthquake feed is available at the USGS Web Site (Links to an external site.)Links to an external site.. Use the feed Past 30 days -> All Earthquakes.
+
+Just use straight magnitude values from the data. There is no need to adjust the values.
+
+Program Specification
+This program will consist of three Python files (in one source folder). The file main.py will be the program that uses the other two modules. In this file you will load the data using Requests and the appropriate URL. Iterate over the file (using the csv module) and create Quake objects. The objects are added to two QuakeList objects (one ASCENDING and one DESCENDING) sequentially. The largest item is found for each list (using the Python max (Links to an external site.)Links to an external site. function.) Then 10 lines are printed out from each QuakeList so we can see that the orders are different.
+
+The Quake object is defined in a module called quake.py. This module also defines the appropriate magic methods to ensure that Quake objects can be compared against each other. You should also implement the magic method that allows you to print the object in a sensible way. Note that if your mag data is not valid when you try to create a Quake object you should just substitute a 0.0. You will want to track the following data:
+
+time (Links to an external site.)Links to an external site.
+latitude (Links to an external site.)Links to an external site.
+longitude (Links to an external site.)Links to an external site.
+mag (Links to an external site.)Links to an external site.
+place (Links to an external site.)Links to an external site.
+The QuakeList object will be in the quakelist.py file and acts like a list object with an important distinction. When the QuakeList object is created it is told to be an ASCENDING or DESCENDING list. Every time you add a Quake to the QuakeList it is always in ASCENDING or DESCENDING order by mag. You never need to sort it. Be sure to implement the proper magic methods to make this work like a list.
+
+Note
+Don't forget to include proper docstrings.
+Comments should explain HOW you accomplished the functionality, docstrings describe the functionality.

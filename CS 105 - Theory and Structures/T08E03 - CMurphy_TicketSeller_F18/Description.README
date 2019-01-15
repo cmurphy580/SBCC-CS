@@ -1,0 +1,48 @@
+The project name of this exercise is TicketSeller
+
+The purpose of this assignment is to learn how to work with iteration and constants. Additionally, you get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+This problem is inspired by the book's Problem P6.10 on page 304.
+
+You are to write an application to pre­sell a limited number of movie tickets. The simple user interface will be contained in Main.java and the object to implement this is referred to as TicketSeller and consists of only the following public methods:
+
+public TicketSeller(int initialTicketAllotment) - Specify the number of tickets you want to sell.
+
+public int requestTickets(int ticketRequest) - Requests ticketRequest number of tickets. Returns TicketSeller.TOO_MANY_TICKETS_REQUESTED if there are more than TicketSeller.MAXIMUM_TICKETS_ALLOWED. Note that one of these constants is private and one is public. Which one needs to be exposed to the user?
+
+public int getNumberOfBuyers() - Tracks number of ticket buyers. You only count buyers who have fulfilled a request. Errors don't count. Your Main.java should contain code to test your TicketSeller object.
+
+Note
+Your requests for tickets will always be positive integers.
+You can pre-sell 0 tickets. Note that all requests but a request for 0 tickets are requesting too many tickets.
+You should use constants for TicketSeller.TOO_MANY_TICKETS_REQUESTED and TicketSeller.MAXIMUM_TICKETS_ALLOWED not an enumerated type.
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called TicketSeller.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called TicketSeller.java as well as a file called Main.java.
+
+
+
+There is no code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation.
+
+Testing Your Code
+
+
+Your test code for this project will be in Main.java and will implement a simple user interface. Here is a sample run:
+
+Input the number of tickets you want to sell: 8
+Input requested tickets: 1
+Thank you for your purchase. There are 7 tickets remaining.
+Input requested tickets: 2
+Thank you for your purchase. There are 5 tickets remaining.
+Input requested tickets: 5
+Too many tickets requested, please try again.
+Input requested tickets: 9
+Too many tickets requested, please try again.
+Input requested tickets: 3
+Thank you for your purchase. There are 2 tickets remaining.
+Input requested tickets: 2
+Thank you for your purchase. There are no tickets remaining.
+You have had 4 buyers.
+Notice that only the valid ticket purchases make someone count as a buyer. Don't worry about other inputs; you'll always get positive integers.
+
+Notice that the numbers are in ascending order. You will need to do that too. Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

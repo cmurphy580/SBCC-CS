@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ title }}</title>
+<style>
+    .instructions {
+        color: green;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+
+<div style="text-align: center;">
+    <h1>Splotify</h1>
+    <hr>
+    <p class="instructions">Username is any of the following: bob, betty, bo, brian, blanche.</p>
+    <p>Password is the Username (All lowercase).</p>
+    <hr>
+    {% block content %}
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}
+            <br>
+            {{ form.username(size=32) }}
+            <br>
+            {% if form.username.data != None and user_data == None %}
+            <span style="color: red;">[Username does not exist]</span>
+            {% endif %}  
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.password.label }}
+            <br>
+            {{ form.password(size=32) }}
+            <br>
+            {% if form.password.data != password and user_data != None %}
+            <span style="color: red;">[Incorrect Password]</span>
+            {% endif %}
+            {% if user_data != None and form.password.data == None %}
+            <span style="color: red;">[Username does not exist]</span>
+            {% endif %}
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <hr>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% endblock %}
+</div>
+</body>
+</html>

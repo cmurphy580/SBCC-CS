@@ -1,0 +1,94 @@
+The project name of this exercise is GaussianEaster
+
+The purpose of this assignment is for you to write more of your own comments and to create methods that are not strictly accessors or mutators. You should also be examining the relationships between the UML diagram and the Java code.
+
+Algorithm Description
+This algorithm was developed by Carl Friedrich Gauss in 1800 and consists of the following steps:
+
+Let y by the year (such as 1800 or 2001).
+Divide y by 19 and call the remainder a. Ignore the quotient.
+Divide y by 100 to get a quotient b and a remainder c.
+Divide b by 4 to get a quotient d and a remainder e.
+Divide 8 * b + 13 by 25 to get a quotient g. Ignore the remainder.
+Divide 19 * a + b - d - g + 15 by 30 to get a remainder h. Ignore the quotient.
+Divide c by 4 to get a quotient j and a remainder k.
+Divide a + 11 * h by 319 to get a quotient m. Ignore the remainder.
+Divide 2 * e + 2 * j - k - h + m + 32 by 7 to get a remainder r. Ignore the quotient.
+Divide h - m + r + 90 by 25 to get a quotient n. Ignore the remainder.
+Divide h - m + r + n + 19 by 32 to get a remainder p. Ignore the quotient.
+Problem Description
+This problem should be solved by implementing the algorithm given above using the objects shown in the UML diagram below. The two attributes should use the (terrible) variable names given in the programming project. You will want to implement the algorithm inside of the Constructor for the GaussianEaster object. All of the rest of the variables mentioned in the algorithm should be local variables, not instance variables. Note that the arguments in UML are backwards from Java code (e.g. y : int is int y in Java). Don't forget the "+" means public and "-" means private with underline meaning static method. The type after a methods colon located after the parenthesis is the return type.
+
+
+
+Using the test year of 2001 shown in the book the output should look like:
+
+Year: 2001 Month: 4 Day: 15
+Getting Started
+Like our last exercise, we are going to do this exercise by writing the object that solves the problem first (in a source file called GaussianEaster.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called GaussianEaster.java as well as a file called Main.java.
+
+Open up theGaussianEaster.java file and replace the code with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: GaussianEaster
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+/**
+ * This class computes the month and day of Easter given the year. The only
+ * instance variables allowed are n (the month) and p (the day).
+ *
+ */
+public class GaussianEaster {
+    public GaussianEaster(int y) {
+    }
+    public int getN() {
+    }
+    public int getP() {
+    }
+}
+Look at this code and compare it to the UML diagram. Note which attributes and methods are missing and add them to the source code. You will also have to add Javadoc documentation to the code. This is especially relevant in the constructor because you should give a (very) brief explanation of the algorithm. Look in the book for the algorithm.
+
+Next, using the same technique you used to create the GaussianEaster.java file to create another file called Main.java. This is where your test code will go. Replace the code in that file with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: GaussianEaster
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+import java.util.*;
+/**
+ * This class tests the GaussianEaster object.
+ *
+ */
+public class Main {
+    /**
+     * Test this code by asking for a year and then having the GaussianEaster class compute the value.
+     *
+     * @param args
+     *            command line values. Not used in this example.
+     */
+    public static void main(String[] args) {
+    }
+}
+Similar to the GaussianEaster.java file go through Main.java and change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed.
+
+You will also notice that Main.java does not contain any code to test the GaussianEaster.java source code. For your test code you can use this kind of case:
+
+Input Easter year: 2001
+Year: 2001 Month: 4 Day: 15
+The text after the color indicates the user input which in this case is 2001. The output is computed and displayed.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

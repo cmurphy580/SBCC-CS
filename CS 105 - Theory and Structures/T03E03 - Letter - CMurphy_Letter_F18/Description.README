@@ -1,0 +1,139 @@
+The project name of this exercise is Letter
+
+The purpose of this assignment is to give you some practice problem solving, writing your own classes, and running unit tests.
+
+Problem Description
+Provide a class for authoring a simple letter. You need the following constructor:
+
+public Letter(String from, String to) - The constructor sets the name of the sender and the recipient.
+
+You will also need the following two methods:
+
+public void addLine(String line) - add a line of text to the body of the letter.
+
+public String getText() - that returns the entire text of the letter. The text has the form:
+
+Dear recipient name:
+blank line
+first line of the body
+second line of the body
+...
+last line of the body
+blank line
+Sincerely,
+blank line
+sender name
+You do not need any more methods in your Letter.java . In your Main.java you'll write code that calls the methods in Letter.java . These methods will be called to print the following letter.
+
+Dear Person:
+I am sorry we must part.
+I wish you all the best.
+Sincerely,
+Another Person
+Construct an object of the Letter class and call addLine twice.
+
+Hints
+Use the concat method to form a longer string from two shorter strings.
+The special string "\n" represents a new line. For example, the statement
+body = body.concat("Sincerely,").concat("\n");
+
+adds a line containing the string "Sincerely", to the body. Notice that you can use the concat method multiple times to keep concatinating. Once you've got that working you can download my test (called LetterTester.java) and run it.
+
+Getting Started
+Like our last exercise, we are going to do this exercise by writing the object that solves the problem first (in a source file called Letter.java ) and then testing it using code we write into Main.java . Using the techniques shown on the web page titled "How to Start Every Project in this Class" create a source file called Letter.java as well as a file called Main.java.
+
+Open up the Letter.java file and replace the code with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: Letter
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+/**
+ * This class creates letters in an automated fashion.
+ *
+ */
+public class Letter {
+
+    /**
+     * Constructor that sets the letter writer and recipient.
+     *
+     * @param from
+     *            Person who is writing the letter.
+     * @param to
+     *            Person to whom the letter is addressed.
+     */
+    public Letter(String from, String to) {
+
+    }
+
+    /**
+     * Add a line of text to the body of the letter.
+     *
+     * @param line
+     */
+    public void addLine(String line) {
+
+    }
+
+    /**
+     * Creates a letter using the designated sender and recipient. The format of
+     * the letter is:
+     *
+     * Dear recipient name: blank line first line of the body second line of the
+     * body ... last line of the body blank line Sincerely, blank line sender
+     * name
+     *
+     * @return the formatted letter.
+     */
+    public String getText() {
+
+    }
+}
+You'll notice that there is only a skeleton of code. It current doesn't do anything; it won't even compile!. You will have to add instance variables and code to get this class defined properly. Read the comments (and the problem) to understand what the problem is and how you will solve it.
+
+Don't forget to go through the code and replace every instance of [CHANGE THIS TO YOUR INFORMATION] to the appropriate item. Be sure to replace the square brackets as well when you replace the text.
+
+Next, using the same techique you used to create the Letter.java file to create another file called Main.java. This is where your test code will go. Replace the code in that file with the code in the grey box below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: Letter
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+/**
+ * This class tests the Letter object.
+ *
+ */
+public class Main {
+
+    /**
+     * Test this code by creating a letter in the form shown in the problem
+     * description.
+     *
+     * @param args
+     *            command line values. Not used in this example.
+     */
+    public static void main(String[] args) {
+
+    }
+}
+Similar to the Letter.java file go through Main.java and change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed.
+
+You will also notice that Main.java does not contain any code to test the Letter.java source code. Write some test routines based upon the problem description.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

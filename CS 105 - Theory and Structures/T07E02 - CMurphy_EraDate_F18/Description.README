@@ -1,0 +1,51 @@
+The project name of this exercise is EraDate
+
+The purpose of this assignment is to learn how to do comparisons using the if statement. Additionally, you get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+In Japan, years are referred to using the Gregorian Calendar (Links to an external site.)Links to an external site. like we do here and also by the name of the Era (called nengou (Links to an external site.)Links to an external site.). The Era is related to the reign of the emperor and to specify a year you use the Era name combined with the year when the Era started. For example, 2014 is referred to as Heisei 26 because the current emporer of Japan's Era is called Heisei (hey-say) and it has been 26 years since the Era started.
+
+The table below shows the last four Eras as well as their start and end dates. We use the whole days for simplicity (ignore hours).
+
+Era Name	Start	End
+Meiji	1/25/1868	7/30/1912
+Taisho	8/1/1912	12/25/1926
+Showa	12/26/1926	1/7/1989
+Heisei	1/8/1989	present
+You are to write a program that will take a date and then print out the Japanese Era name (using something like a println) or it will return a String in ISO 8601 date format (Links to an external site.)Links to an external site.. ISO 8601 date format looks like the following:
+
+YYYY-MM-DD
+
+Where YYYY is the year, MM is the month, and DD is the day. Note that MM and DD must always have two digits and for one digit values a zero is prepended (e.g. January is 01). The complete string for an ISO 8601 formatted day of January 25, 2011 is:
+
+2011-01-25
+
+The object to implement this is referred to as EraDate and consists of the following public methods:
+
+public EraDate(int year, int month, int day) - This Constructor takes a four digit year, a month (1-12), and a day (1-31).
+
+public String getIso8601Date() - Returns a String corresponding to the date specified in the constructor.
+
+public void printJapaneseEraName() - Prints the Japanese Era name according to the table shown above. Notice that it doesn't return a string, it prints just the Era name. The names used must match the table exactly.
+
+Your Main.java should contain code to test your EraDate object. Be sure to test the cases where one day is one Era and the next day is another (i.e. the boundary test cases from Chapter 5.6).
+
+Requirements
+You must incorporate these items:
+
+You must use only if statements and compound conditional expressions to implement public void printJapaneseEraName. You cannot use if/else or if/else if statements.
+Create a UML diagram of your solution and import the png image in to your project. If you don't know how to import an image see the How to Import an Image page.
+Hints
+You might want to use the GregorianCalendar object to hold your date representation.
+The GregorianCalendar object uses months from 0 to 11 rather than from 1 to 12 so adjust accordingly.
+The GregorianCalendar object defines the fields: Calendar.YEAR, Calendar.MONTH, and Calendar.DAY_OF_MONTH to be used with the get method.
+The GregorianCalendar object also has a getTimeInMillis method that returns the number of millisecond of the object. This simplifies comparisons.
+String.format is a method called by specifying the class name (String) then the method name (format). It returns a custom string using the same format string as the printf method.
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called EraDate.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called EraDate.java as well as a file called Main.java.
+
+Starting this week we don't have any code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation.
+
+Your Main.java should contain code to test your EraDate object. Be sure to test the edge cases where you use dates that are on the edge of the year definitions.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

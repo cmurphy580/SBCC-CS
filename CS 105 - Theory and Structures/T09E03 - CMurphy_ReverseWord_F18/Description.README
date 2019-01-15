@@ -1,0 +1,27 @@
+The project name of this exercise is ReverseWord
+
+The purpose of this assignment is to learn how to work with iteration and string processing. You get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+You are going to write an object that takes a word (or short phrase) as an input for the Constructor and then will reverse the letters in the word. The object to implement this is referred to as ReverseWord and consists of only the following public methods:
+
+public void setWord(String word) - Sets the word to be processed.
+
+public String getWord() - Returns the word that is set with setWord. Note that if this is called before setWord then an empty String is returned.
+
+public String getReversedWord() - Returns the word set by setWord with the letters in reverse order. Note that if this is called before setWord then an empty String is returned.
+
+Note that you do not implement a Constructor. We will simply use the default constructor that Java creates for us. Your Main.java should contain code to test your ReverseWord object. Load multiple values and check to make sure that the values match the expected values.
+
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called ReverseWord.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called ReverseWord.java as well as a file called Main.java.
+
+There is no code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation.
+
+Testing Your Code
+Your Main.java should contain code to test your ReverseWord object. Ask the user for a word and then output the original word and its reversed version. A sample run is shown below:
+
+Input word to be reversed: catalog
+Input word: catalog
+Reversed word: golatac
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

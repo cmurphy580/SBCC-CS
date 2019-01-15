@@ -1,0 +1,27 @@
+The project name of this exercise is WaterState
+
+The purpose of this assignment is for you to write all of your own comments and code. You will also get some practice using enumeration.
+
+Problem Description
+You are to implement a program which tracks the state of water. This will be implemented using the UML shown below.
+
+
+
+The temperature String passed to the constructor will be something like "100C" for 100 degrees Centigrade or "-20F" for minus 20 degrees Fahrenheight. You need to take that String and set your instance variables in the constructor.
+
+The getState method returns one of the MatterState enumerated types (See Special Topic 5.4 Enumeration Types on pag 206). In UML, the values of the enumerated types are given by the attributes. You don't need to use the text <<enumeration>> at all in your Java code. It is just a way of indicating that the diagram represents an enumerated type.
+
+Hints:
+
+You might want to use the substring method of the String object.
+You can print the MatterState enumerated type directly.
+Enumerated types, also called enum, have a template under eclipse like when you create a class.
+The enumerated type will have a separate source file.
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called WaterState.java and MatterState.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called WaterState.java as well as a file called MatterState.java and Main.java.
+
+Starting this week we don't have any code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation as well as implement all of the methods in the UML diagram.
+
+Your Main.java should contain code to test your WaterState and MatterStateobjects. Be sure to test the cases where you have Fahrenheit and Celcius temperature scales (i.e. the edge cases).
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

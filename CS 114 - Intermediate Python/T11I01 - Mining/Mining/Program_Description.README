@@ -1,0 +1,6 @@
+Enter the digit value you want to use as a check on the hash.
+From the entered value determine how many digits need to be checked.
+Compute the hash with a given nonce.
+block number + nonce + data
+Use SHA-2 (256 digest)
+If it matches the check on the hash you're done otherwise generate another nonce.

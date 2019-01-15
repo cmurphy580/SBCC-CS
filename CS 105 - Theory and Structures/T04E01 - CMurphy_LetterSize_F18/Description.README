@@ -1,0 +1,87 @@
+The project name of this exercise is LetterSize.
+
+The purpose of this assignment is for you to write more of your own comments and to use constants in your program.
+
+Problem Description
+Write a program that will create a LetterSize object. You specify the objects width and height in the constructor in inches. You can then call accessor methods that give you the width and height in millimeters. You will also write test code (in your Main.java) that will test the case for a letter that has the dimensions of 8.5 x 11 inches. Be sure to print it out so that there are two numbers after the decimal point for the conversions.
+
+To solve this problem utilize the method signatures given in the UML diagram below.
+
+
+
+Hints:
+There are 25.4 millimeters per inch.
+When using printf the format specifier for two digits is listed on page 149 of the book.
+Getting Started
+Like our last exercise, we are going to do this exercise by writing the object that solves the problem first (in a source file called LetterSize.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled "How to Start Every Project in this Class" create a source file called LetterSize.java as well as a file called Main.java.
+
+Open up theLetterSize.java file and replace the code with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: LetterSize
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+/**
+ * This class converts the size of letters.
+ *
+ */
+public class LetterSize {
+
+    public LetterSize(double widthInInches, double heightInInches) {
+
+    }
+
+    public double getWidthInMillimeters() {
+
+    }
+
+    public double getHeightInMillimeters() {
+
+    }
+}
+In this case you'll notice that not only do we have a code skeleton but the methods don't have any documentation. You'll have to add the proper Javadoc documentation as well as the proper code to solve the problem. You will have to add instance variables, a constant, and code to get this class defined properly. Read the comments (and the problem) to understand what the problem is and how you will solve it.
+
+Next, using the same techique you used to create the LetterSize.java file to create another file called Main.java. This is where your test code will go. Replace the code in that file with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: LetterSize
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+/**
+ * This class tests the LetterSize object.
+ *
+ */
+public class Main {
+
+    /**
+     * Test this code by creating an 8.5 x 11 inch letter and getting the size
+     * in millimeters.
+     *
+     * @param args
+     *            command line values. Not used in this example.
+     */
+    public static void main(String[] args) {
+
+    }
+}
+Similar to the LetterSize.java file go through Main.java and change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed.
+
+You will also notice that Main.java does not contain any code to test the LetterSize.java source code. Write some test routines based upon the problem description.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

@@ -1,0 +1,79 @@
+The project name of this exercise is Multiply.
+
+The purpose of this assignment is to show you where to write your unit tests and how to download and run my unit test.
+
+Start this exercise using the technique on the web page titled "How to Start Every Project in this Class". When complete you should have a Main.java file ready for you to fill with code. Replace all of the code present with the code contained in the box below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: Multiply
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+/**
+ * This class tests the Multiply object.
+ *
+ */
+public class Main {
+
+    /**
+     * This method creates a Multiply object and then uses it to multiply 2 by
+     * 3. It prints out this result along with the expected result for error
+     * checking.
+     *
+     * @param args
+     *            command line values. Not used in this example.
+     */
+    public static void main(String[] args) {
+        Multiply multiply = new Multiply();
+
+        int shouldBeSix = multiply.byTwo(3);
+
+        System.out.println("If you double 3 you should get 6 and we get "
+                + shouldBeSix + ".");
+
+    }
+
+}
+You can simply copy the code from the code above and paste it into the Main.java file. Go through the code and replace every instance of [CHANGE THIS TO YOUR INFORMATION] to the appropriate item. Be sure that the square brackets are included when you replace the text. There are two items that need to be changed.
+
+Next, using the same techique you used to create the Main.java file create another file called Multiply.java. Replace the code in that file with the code in the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: Multiply
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+/**
+ * This class implements various multiplication types using a variety of methods.
+ *
+ */
+public class Multiply {
+
+    /**
+     * Multiplies an integer input by two.
+     *
+     * @param multiplicand
+     *            number to be multiplied by two.
+     * @return the multiplicand multiplied by two.
+     */
+    public int byTwo(int multiplicand) {
+        return multiplicand * 2;
+    }
+}
+Similar to the Main.java file go through Multiply.java and change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed. Run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu. You should really memorize the keyboard shortcut since you'll be doing this a lot in this class!
+
+What you've done is create an object that solves a particular problem and then tested it with the code that was found in Main.java. You also properly documented the code using Javadoc. This is a very typical structure for exercises in this class. You will be given a problem which you will solve using one or more objects that you write. In this case there was only one object which was specified by the Multiply.java class. The test code was found in Main.java and this code created a Multiply object and then used it. It predicted the output and then showed that the output matched the input.

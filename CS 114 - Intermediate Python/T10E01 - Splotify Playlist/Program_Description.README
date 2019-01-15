@@ -1,0 +1,15 @@
+This assignment has you implementing a small flask-based splotify playlist function where you can login and get presented with a list of songs (along with album art). You can add, delete, and rearrange the order of your songs in the playlist.
+
+Program Specification
+This project has two databases songs.json for the songs available and users.json which are the users and their playlists. The song should contain the title, artist, and year. There should also be an image wich corresponds to the cover art. You're welcome to use any kind of music you'd like.
+
+The users.json contains the username of a user and their playlist. Be aware that you'll need to track the songs in the playlist as well as the order. When the list is shown it should be in order and if they change the order you must reflect that change in the displayed list.
+
+Pages Needed
+You'll need to display various pages for this project.
+
+Home Page - You log in here. It only goes to the playlist page when a user in the file user.json is present.
+Playlist Page - Page which displays your playlist and allows you to add or remove items from the list. You can also change the order of the playlist.
+Notes
+You can preload the users.json file with the users. There is no need for a registration screen.
+You should look up how to make tables in HTML.

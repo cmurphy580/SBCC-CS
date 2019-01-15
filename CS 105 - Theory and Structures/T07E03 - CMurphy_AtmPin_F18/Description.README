@@ -1,0 +1,29 @@
+The project name of this exercise is AtmPin
+
+The purpose of this assignment is to learn how to do intermediate comparisons as well as learning when to create instance variables. Additionally, you get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+You are writing a small section of an ATM machine where you accept a string that is a password and accept it or reject it. If the user tries more than three times with a bad password the card is blocked and no password will be accepted until the resetPasswordAttempts method is called. The password must be fixed at 1234. Security is a priority!
+
+The object to implement this is referred to as AtmPin and consists of the following public methods:
+
+public AtmPin() - Creates an AtmPin object.
+
+public boolean acceptPinCode(String code) - Accepts a string which represents the password attempt. If the string matches the password (which is fixed at 1234) then the method returns true, otherwise it returns false.
+
+public boolean isBadPassword() - True when a bad password is passed to acceptPinCode. Updated every time a password is passed to acceptPinCode. Note that you can have a good password but it is not accepted by the system (acceptPinCode returns false) since the password is blocked.
+
+public boolean isBlocked() - If more than three attempts are made then the password is not accepted (acceptPinCode returns false) until resetPasswordAttempts is called.
+
+public void resetPasswordAttempts() - Resets the number of attempts to zero.
+
+Your Main.java should contain code to test your AtmPin object. Be sure to test the cases where you are blocked and send it a good password. It should still reject the password but isBadPassword will return false.
+
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called AtmPin.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called AtmPin.java as well as a file called Main.java.
+
+Again, starting this week we don't have any code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation.
+
+Your Main.java should contain code to test your AtmPin object. The test code for this project can be quite complex. Be sure to test the case where you get good passwords, bad passwords, and when you're locked out.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

@@ -1,0 +1,23 @@
+Program Description
+This program implements the Playfair Cipher (Links to an external site.)Links to an external site.. This is a simple cipher that is no longer considered secure in the modern era but makes for an interesting application.
+
+Program Specification
+This program will consist of one python file called playfair.py and in that file you should implement the following public interface:
+
+def set_key(key):
+  '''Set the key to be used by the cipher.'''
+
+def get_table(key):
+  '''Returns a string with the key table formatted as a 5 x 5 block.'''
+
+def encrypt(plaintext):
+ '''Encrypt using the Playfair cipher and return the encrypted plaintext.'''
+
+def decrypt(ciphertext):
+ '''Decrypt using the Playfair cipher and return the plaintext.'''
+You should also include code to ask a user for a key phrase ("playfair example" is the default) and then a phrase to be encrypted. The output should print out the key phrase, key table, input phrase, encrypted phrase, and decrypted phrase (which will differ from the input phrase but be recognizable).
+
+Note
+Use the same scheme in the Wikipedia page where "I" and "J" refer to the same letter.
+Convert all inputs and give all outputs in uppercase.
+You should raise an exception (Links to an external site.)Links to an external site. of the type RuntimeError if a user attempts to encrypt a plaintext sample without setting the key first.

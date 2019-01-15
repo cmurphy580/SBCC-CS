@@ -1,0 +1,11 @@
+Write a utility called flip
+based on shout.
+returns head/tails or HEAD/TAILS when called.
+pip installable.
+$	flip	--help	
+usage:	flip	[-h]	[-c]	[-V]	
+optional	arguments:	
+		-h,	--help								show	this	help	message	and	exit	
+		-c,	--capitalize		output	word	capitalized.	
+		-V,	--version					show	program's	version	number	and	
+exit

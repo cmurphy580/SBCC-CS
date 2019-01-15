@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ title }}</title>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #d4d4d4;
+    }
+ 
+    img {
+        height: 20%;
+        width: auto;
+    }
+    .remove {
+        cursor: pointer;
+        font-size: 10px;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+    }
+    .add {
+        cursor: pointer;
+        font-size: 15px;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+    }
+    .remove:hover {
+        color: red;
+    }
+    .add:hover {
+        color: green;
+    }
+    </style>
+</head>
+<body>
+ 
+<div style="text-align: center;">
+    {% block content %}
+    <h1>Splotify</h1>
+    <hr/>
+    <h3>Hi {{ user_data['user'].title() }}! Create a playlist</h3>
+    <hr/>
+    <form action="/user/{{ user_data['ID'] }}" method="post">
+    <table>
+        <tr>
+            <th>Order</th>
+            <th>Song</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Year Released</th>
+            <th>Album Cover</th>
+        </tr>
+        {% for song in playlist %}
+        <tr>
+            <td>
+                <select name="{{ loop.index0 }}">
+                    <option value="sort">{{ loop.index0 + 1 }}</option>
+                    {% for song in playlist %}
+                    <option value="{{ loop.index0 }}">{{ loop.index0 + 1 }}</option>
+                    {% endfor %}
+                </select>
+                <!--<input width="60px" type="number" min="1" max="10" placeholder="No." name="{{ song['id'] }}" />-->
+            </td>
+            <td>{{ song['song'] }}</td>
+            <td>{{ song['artist'] }}</td>
+            <td>{{ song['album'] }}</td>
+            <td>{{ song['year'] }}</td>
+            <td><img src="{{ song['image'] }}"></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <hr>
+    <h4> Add Song: </h4>
+    <select name="add_song">
+            <option value="0">Add a Song </option>
+        {% for song in songs %}
+            <option value="{{ song['id'] }}">"{{ song['song'] }}" by {{ song['artist'] }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="+" class="add" method="post" />
+    <br>
+    <h4> Remove Song: </h4>
+    <select name="remove_song">
+            <option value="0">Remove a Song</option>
+        {% for song in playlist %}
+            <option value="{{ song['id'] }}">"{{ song['song'] }}" by {{ song['artist'] }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="X" class="remove" method="post" />
+    <br>
+    <br>
+    <br>
+    <input type="submit" method="post" value="Change Playlist"/>
+    <br>
+    </form>
+    <br>
+    <hr/>
+    <br>
+    <a href="/">Go to home page</a>
+    {% endblock %}
+    <br>
+    <br>
+</div>
+</body>
+</html>

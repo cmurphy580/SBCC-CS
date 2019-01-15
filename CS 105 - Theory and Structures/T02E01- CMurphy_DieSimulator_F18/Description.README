@@ -1,0 +1,99 @@
+The project name of this exercise is DieSimulator.
+
+The purpose of this assignment is to give you a little practice problem solving, looking up Java documentation, writing unit tests, and running unit tests.
+
+Problem Description
+You are creating an object that will simulate rolling a die. A die (also called a dice) has a good description in wikipedia (Links to an external site.)Links to an external site.. The relevant part for us is that when we roll a die it will give us a random number between 1 and 6. Everytime we roll it we get a new number. Of course, we can roll the same number multiple times in a row but we should eventually get a different value.
+
+Your job is to write the code for a method called rollTheDie() that is part of the DieSimulator object. The place where your code goes is marked clearly by comments. You will also need to place your test code into Main.java and when that is working correctly you need to down load the DieSimulatorTester.java code and run that to see if your code passes the test.
+
+Getting Started
+Similar to the Multiply exercise, start this exercise using the technique on the web page titled "How to Start Every Project in this Class". When complete you should have a Main.java file ready for you to fill with code. Replace all of the code present with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: DieSimulator
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+/**
+ * This class tests the DieSimulator object.
+ *
+ */
+public class Main {
+
+    /**
+     * This method creates a DieSimulator object and repeatedly invokes its
+     * rollTheDie method. The hope is that there are enough calls here to show
+     * that the simulator works properly.
+     *
+     * @param args
+     *            command line values. Not used in this example.
+     */
+    public static void main(String[] args) {
+        DieSimulator ds = new DieSimulator();
+
+        System.out.println("    One die roll is " + ds.rollTheDie());
+
+        // Add more of these until you are convinced the code works
+        // correctly.
+        System.out.println("Another die roll is " + ds.rollTheDie());
+    }
+
+}
+You can simply copy the code from the listing above and paste it into the Main.java file. Go through the code and replace every instance of [CHANGE THIS TO YOUR INFORMATION] to the appropriate item. Be sure that the square brackets are included when you replace the text. There are two items that need to be changed. You should then add multiple System.out.println lines as shown in the comments. Add as many as you think you might need to show that your code is functioning properly.
+
+Next, using the same techique you used to create the Main.java file create another file called DieSimulator.java. Replace the code in that file with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: DieSimulator
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+
+import java.util.*;
+
+/**
+ * This class simulates rolling a die by generating a random number between 1
+ * and 6 inclusive.
+ *
+ */
+public class DieSimulator {
+
+    /**
+     * Simulates the die roll.
+     *
+     * @return a random integer from 1 to 6 inclusive.
+     */
+    public int rollTheDie() {
+        int randomDieRoll = 0;
+
+        // YOUR CODE GOES FROM HERE
+
+
+
+
+        // TO HERE
+
+        return randomDieRoll;
+    }
+}
+Similar to the Main.java file go through DieSimulator.java and change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed.
+
+You need to add code to generate a random number from 1 to 6 inclusive. To do that you'll need to use the Random object which is a part of the Java library. There is a description of the Random object (Links to an external site.)Links to an external site. online. Read this documentation to get an understanding of how to use the Random object. Before running to Google for the answer on how to generate a number from 1 to 6 please spend a little time thinking about it and solve it on your own. Look and see what you have to work with and how you can get the answer you want. Being able to develop that algorithm is a key skill in computer science.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?
+
+What you've done is create an object that solves a particular problem and then tested it with the code that was found in Main.java. You also properly documented the code using Javadoc. This is a very typical structure for exercises in this class. You will be given a problem which you will solve using one or more objects that you write. In this case there was only one object which was specified by the DieSimulator.java class. The test code was found in Main.java and this code created a DieSimulator object and then used it. It showed the output which can be examined for correctness.

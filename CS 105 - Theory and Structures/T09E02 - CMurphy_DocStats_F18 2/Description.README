@@ -1,0 +1,31 @@
+The project name of this exercise is DocStats
+
+The purpose of this assignment is to learn how to work with a data file and iteration. You get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+You are going to write a program that gathers statistics on a text file in a way that is similar to word processors which tell you how many characters, words, and lines you have written.
+
+
+
+The UML above contains all of the public interfaces needed to implement the problem. You might need some private variables to fully implement the DocStats object.
+
+Your Main.java should contain code to test your DocStats object.
+
+Hints:
+
+You can use two independent scanners inside of one method.
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called DocStats.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create a source file called DocStats.java as well as a file called Main.java.
+
+There is no code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation.
+
+Testing Your Code
+Your Main.java should contain code to test your DocStats object. Ask the user for the name of a file (using a scanner) and outputs the statistics. A sample run is shown below:
+
+Enter filename: goblin.txt
+Number of characters: 1450 (expected 1450)
+Number of words: 257 (expected 257)
+Number of lines: 49 (expected 49)
+To use the file goblin.txt download it from Canvas. It should be located immediately below this assignment.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

@@ -1,0 +1,42 @@
+The project name of this exercise is Instafilter
+
+The purpose of this assignment is to learn how to work with Interfaces, iteration, 2-D Arrays, and image processing. You get more practice on how to write all of your own code and Javadoc comments.
+
+Problem Description
+You are going to extend a simple image processing application (ala Instagram) called Instafilter to create a set of three effects that can be applied to an image. The effects (called filters) are Gray Scale, Sepia Tone, and Blur. These filters are all created by implenting the Filterable interface.
+
+The Gray Scale filter (GrayScale.java) will take the input image and make it a gray scale image. To make a gray scale pixel you have to add the R channel to the G channel to the B channel and divide by 3. The resultant number is then put back into the R, G, and B channels.
+
+The Blur filter (Blur.java) takes the nearest neighbor pixels (the ones surrounding a given pixel) and averages them. This takes the place of the center pixel. Note that you don't have to process the outermost pixels since they don't have a complete set of nearest neighbors. Also note that you have to do each channel separately.
+
+The Sepia Tone (Sepia.java) filter uses the following formula:
+
+red = (red * .393) + (green * .769) + (blue * .189)
+green = (red * .349) + (green * .686) + (blue * .168)
+blue = (red * .272) + (green * .534) + (blue * .131)
+Note that you must have each channel set to an integer number between 0 and 255. If a number is over 255 then you need to set it to 255.
+
+Take a look at the Javadoc for sbccutils to learn about the Filterable interface. The filter you will write will take a PixelArray as an argument and return a (presumeably) filtered PixelArray. A PixelArray is a 2-D array of Pixel objects where each Pixel object is simply the red, green, and blue channels of a pixel.
+
+Getting Started
+The first code you should write is the Main.java source file. In it you should put the following code:
+
+Instafilter instafilter = new Instafilter();
+
+// instafilter.addFilter(new GrayScale());
+instafilter.run();
+Before you run this code make sure you've imported the image file sbcc.jpg into your project. Once imported run it. You'll see a user interface. Load the image file and see it show up on your screen! It should look similar to what is shown below:
+
+
+
+You'll be writing code to modify these images which will pop up in their own window. In the sample the GrayScale filter has been commented out. When you write yours you will need to uncomment that code to get it to work. For reference the GrayScale filter output looks like this (note the name on the top of the frame):
+
+
+
+Hints:
+Read the Javadoc information on sbccutils.
+The Instafilter application asks the filter for its name to help create the menu. How can you give a sensible name to your filter? What method needs to be overridden?
+We are going to do this exercise by writing the object that creates the user interface first (in a source file called Main.java). Once we've got that working we can add our filters which will be GrayScale.java, Blur.java, and Sepia.java.
+
+Testing Your Code
+Your Main.java should contain code to add your filters. Run the code and look at the output. It shold do what you expect. If not, how can you modify the code to do what you want?

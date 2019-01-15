@@ -1,0 +1,56 @@
+The project name of this exercise is ResistorDecoder
+
+The purpose of this assignment is to learn how to work with inheritance, selection, and string processing as well as how to write all of your own code and Javadoc comments.
+
+Problem Description
+Resistors are electronic devices which resist the flow of current through an electronic circuit. The values of a resistor are given in Ohms (Ω) and are standardized with an electronic color code (Links to an external site.)Links to an external site.. We are going to use a four band color code as shown below:
+
+
+
+For a given set of four colors we look up each color in sequence. For the example shown the first band (1st) is red which corresponds to the number "2". The second (2nd) band is Violet which is the number "7". The multiplier is Green which is "x105". Lastly, the tolerance is given as a Gold band which corresponds to "±5%". The expected value is 27x105 Ohms with a tolerance of ±5%. This is written as:
+
+2.7MΩ, ±5%
+
+You will notice that the raw numerical value is 2700000 ohms which is made "human-friendly" by writing it in terms of Megaohms. The same logic applies to Kiloohms as well. The numerical values used are given in the table below which is adapted from the Wikipedia page (Links to an external site.)Links to an external site.
+
+Color	1st and 2nd Bands	Multiplier	Tolerance
+Black	0	×100
+Brown	1	×101	±1%
+Red	2	×102	±2%
+Orange	3	×103
+Yellow	4	×104	±5%
+Green	5	×105	±0.5%
+Blue	6	×106	±0.25%
+Violet	7	×107	±0.1%
+Gray	8	×108	±10%
+White	9	×109
+Gold	–	×10−1	±5%
+Silver	–	×10−2	±10%
+None	–	–	±20%
+Your job will be to write code to take an array of colors and translate that into a nice human readable string. To do so you will implement the public interface of your objects according to the following UML diagram.
+
+
+
+The ResistorDecoder object will be the object used by your Main.java to translate the array of colors into the human-friendly string. The ResistorDecoder will need several different types of lookup tables depending upon whether we are looking up a String from the colors or a numerical value. The LookupTable object is an abstract object since it contains an abstract method get(). The ToleranceLookup object takes a color and returns a String which is the tolerance string (e.g. ±5%). The NumberLookup object takes a color and can return a String but it also can return a Double. Since we are extending the LookupTable object (it didn't have the ability to return a double before) we need to inherit from the LookupTable object. The MultiplierLookup object works in a similar way to the NumberLookup object but the internal lookup tables are different. Therefore we need to inherit from the NumberLookup table even though we don't need to add any methods.
+
+Getting Started
+We are going to do this exercise by writing the object that solves the problem first (in a source file called ReistorDecoder.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled How to Start Every Project in this Class create source files called ReistorDecoder.java, LookupTable.java, ToleranceLookup.java, NumberLookup.java, MultiplierLookup.java as well as a file called Main.java.
+
+There is no code to copy for the assignment. You get to do it all! Don't forget to provide proper Javadoc documentation.
+
+Testing Your Code
+Your Main.java should contain code to test your ReistorDecoder.java object. Here is a sample of the test code:
+
+ResistorDecoder r = new ResistorDecoder();
+String[] resistor0 = { "Black", "Brown", "Black", "Gold" };
+System.out.println("Expected output: 1Ω, ±5% Actual output: " + r.decodeResistor(resistor0));
+The output for the code above is: Expected output: 1Ω, ±5% Actual output: 1Ω, ±5%
+
+Below is a table which gives you some sample colors and the expected output. Pay particular attention to the format of the output string. Yours will have to match exactly.
+
+Colors	Output
+Yellow	Violet	Red	Violet	4.7KΩ, ±0.1%
+Brown	Black	Violet	Brown	100MΩ, ±1%
+Be sure to test the different values before running my unit test.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?

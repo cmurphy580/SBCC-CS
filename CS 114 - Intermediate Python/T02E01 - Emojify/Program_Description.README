@@ -1,0 +1,19 @@
+Program Description
+This program does text substitution where certain words are substituted with emoji. You enter a sentence and the "emojified" version is printed.
+
+It's interesting to note that emoji are commonly misunderstood (Links to an external site.)Links to an external site. but are still quite popular.
+
+Input / Output
+You will ask the user for an input text string and where there are certain words you will substitute emoji.
+
+Here is a sample run of an example program:
+
+String to translate: Smile! You're   too cool.
+
+Translation: 😀! You're   too 😎.
+
+Note
+Only the words to be converted are converted.
+You convert the words regardless of case.
+You preserve spaces between words. In our example there are three spaces between "You're" and "too". Those three spaces are preserved in the translated text.
+You can cut and paste emoji from the getemoji (Links to an external site.)Links to an external site. site. You can also use your emoji keyboard if your system has one. You can also try cutting and pasting from the assignment.

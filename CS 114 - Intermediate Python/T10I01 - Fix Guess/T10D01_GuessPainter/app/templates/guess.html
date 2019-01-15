@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guess the Painter?</title>
+</head>
+<body>
+
+<table style="text-align:center">
+<!-- Show images -->
+<tr>
+	{% for painting in paintings %}
+		<td><img src="/static/{{ painting }}"></td>
+	{% endfor %}
+</tr>
+<!-- Show artists names -->
+<form action="/guess">
+<tr>
+	{% for _ in range(3) %}
+		<td>
+			<select name="painter{{ loop.index0 }}">
+				{% for painter in painters %}
+					{% if painter_guess[_] == painter %}
+						<option value="{{ painter }}" selected>{{ painter }}</option>
+					{% else %}
+						<option value="{{ painter }}">{{ painter }}</option>
+					{% endif %}
+				{% endfor %}
+			</select>
+		</td>
+	{% endfor %}	
+</tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td colspan="3">
+	<input type="submit" method="get" value="Guess the Painter"><br/><br/>
+	<input type="hidden" name="images" value="{% for painting in paintings %}{{ painting }} {% endfor %}">
+	</td>
+</tr>
+<tr><td colspan="3"><a href="/">Go to home page</a></td></tr>
+</form>
+</table>
+{% if guess_made %}
+	{% if guess_correctly %}
+		<h1>You matched the artists!</h1>
+	{% else %}
+		<h1>You didn't match. Try again.</h1>
+	{% endif %}
+{% endif %}
+</body>
+</html>

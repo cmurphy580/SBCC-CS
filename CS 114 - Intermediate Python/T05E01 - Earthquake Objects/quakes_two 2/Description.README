@@ -1,0 +1,19 @@
+T13E01 - Causes of Death
+
+The purpose of this assignment is to use JupyterLabs, pandas, and matplotlib to do some analysis on CDC data on causes of death in the U.S. This assignment will require you to look up some items on using pandas and matplotlib to complete the assignment.
+
+Program Description
+You download the file called Causes of Death Assignment which is a functional JupyterLab notebook. It contains three questions I want you to answer:
+
+What is the leading cause of death in the United States for the year 2016?
+Which state had the highest rate of death from that cause in 2016?
+Plot the Age-adjusted Death Rate for the leading cause of death found in item one but for California over the years [2000, 2016].
+All code should be contained in a single notebook that you should have downloaded.
+
+Note
+You should look at 10 minutes to pandas (Links to an external site.)Links to an external site. to get a sense of how pandas works.
+You can look at the matplotlib (Links to an external site.)Links to an external site. page to see how to work with matplotlib. It's a very complex library so focus just on what you're trying to do. You can get fancy later.
+How to turn in this exercise
+There is one file to be submitted for this exercise:
+
+Change the name of the file by prepending your pipeline username to the file. Once done, you should upload the .ipynb file directly.

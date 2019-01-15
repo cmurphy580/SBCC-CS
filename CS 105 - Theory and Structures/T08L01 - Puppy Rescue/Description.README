@@ -1,0 +1,10 @@
+This lab is a group project with people randomly assigned to groups. Start on the project in the classroom and when you're ready, go to the lab and code it up. Use the test data below to see if you answer works correctly. When it's demonstrated to me I'll give you different data to use to make sure it works correctly.
+
+Sample Data
+Price	Quantity	Pet?
+$2.00	4	N
+$5.00	4	Y
+$10.00	2	N
+$1.00	10	N
+$5.00	6	Y
+Discount: $7.60

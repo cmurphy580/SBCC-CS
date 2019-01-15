@@ -1,0 +1,109 @@
+The project name of this exercise is AlignedNumbers
+
+The purpose of this assignment is for you to write more of your own comments and to create methods that are not strictly accessors or mutators.
+
+Problem Description
+You are to implement code the does the following operations:
+
+sum
+difference
+product
+average
+distance (absolute value of the difference)
+maximum (larger of the two)
+minimum (smaller of the two)
+You are to complete this exercise by writing a class called AlignedNumbers. This class will implement each mathematical operation as a separate method. Refer to the book for a description of what each method does.
+
+The AlignedNumbers object created from our class will be tested in your Main.java file. The test should ask the user for two integers and print out the statistics using a method called printStats (this method is not mentioned in the book). The UML diagram for this problem is shown below. Be sure to understand how the UML relates to the code that is present. Notice that the UML and the code match as far as the public interface is concerned.
+
+
+
+Notice the dependency arrow from Main to AlignedNumbers. This shows you that the Main class requires the AlignedNumbers class to work properly.
+
+Here is a sample of how you will test the code. When the program is run you will ask the user for two integer numbers. Do not worry about error checking; the integer inputs will always be valid.
+
+Input first number: 20
+Input second number: 25
+You then print all of the statistics using the exact format below. Your printStats method must generate this exact format for any two integers between 1 and 1000.
+
+Sum:                        45
+Average:                    22.50
+Difference:                  5
+Product:                   500
+Distance:                    5
+Maximum:                    25
+Minimum:                    20
+Hints:
+There are 30 characters in the first line starting with "S" and ending with "5".
+The ones digits are all aligned.
+Use printf.
+min and max are in the Math class.
+Getting Started
+Like our last exercise, we are going to do this exercise by writing the object that solves the problem first (in a source file called AlignedNumbers.java) and then testing it using code we write into Main.java. Using the techniques shown on the web page titled "How to Start Every Project in this Class" create a source file called AlignedNumbers.java as well as a file called Main.java.
+
+Open up theAlignedNumbers.java file and replace the code with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: AlignedNumbers
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+/**
+ * This class computes the statistics of two integers and prints them out.
+ *
+ */
+public class AlignedNumbers {
+    private int firstNumber;
+    public void setFirstNumber(int firstNumber) {
+    }
+    public int getSum() {
+    }
+    public double getAverage() {
+    }
+    public int getDistance() {
+    }
+    public int getMinimum() {
+    }
+}
+Look at this code and compare it to the UML diagram. Note which attributes and methods are missing and add them to the source code. You will also have to add Javadoc documentation to the code. This is especially relevant because you should give a (very) brief explanation of what the code does. Look to the problem description in the book for big hints on what to write. Be sure to reference the problem description above (and in the book) in order to solve this problem.
+
+Next, using the same technique you used to create the AlignedNumbers.java file to create another file called Main.java. This is where your test code will go. Replace the code in that file with the code below:
+
+/**
+ * CS 105 Theory and Practice I
+ * CRN: [CHANGE THIS TO YOUR INFORMATION]
+ * Assignment: AlignedNumbers
+ *
+ * Statement of code ownership: I hereby state that I have written all of this
+ * code and I have not copied this code from any other person or source.
+ *
+ * @author [CHANGE THIS TO YOUR INFORMATION]
+ */
+package edu.sbcc.cs105;
+import java.util.*;
+/**
+ * This class tests the AlignedNumbers object.
+ *
+ */
+public class Main {
+    /**
+     * Test this code by asking for two numbers, computing the various stats,
+     * and then printing it out.
+     *
+     * @param args
+     *            command line values. Not used in this example.
+     */
+    public static void main(String[] args) {
+    }
+}
+Similar to the AlignedNumbers.java file go through Main.java and change the [CHANGE THIS TO YOUR INFORMATION] text to the proper items. There are two items to be changed.
+
+You will also notice that Main.java does not contain any code to test the AlignedNumbers.java source code. Write some test routines based upon the problem description and follow the input and output examples closely.
+
+Once you've written your code run the code by single clicking on Main.java in the package explorer and selecting Run -> Run from the menu or using the keyboard shortcut. Examine the output. Does it do what you want? If not, how can you modify the code to do what you want?
